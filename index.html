@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burgers Thrones</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./static/img/logo.png" alt="logo-image"
-        /></a>
-        <ul>
-          <li><a href="./templates/menu.html">Nuestras delicias</a></li>
-          <li>
-            <a href="./templates/postulation.html" target="_blank"
-              >Trabajá con nosotros</a
-            >
-          </li>
-          <li><a href="#ubicacion">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="video-main">
-        <video autoplay loop muted>
-          <source src="./static/video/videoprincipal.mp4" type="video/mp4" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="scrolls">
+    <div class="up"><span>↑</span>
+      <div class="center"><span>Desplazate<br>scrolleando</span></div>
+    </div>
+    <div class="down"><span>↓</span></div>
+  </div>
+  <div class="smooth">
+    <div class="header">
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Promos">Promos</a></li>
+        <li><a href="#Contactanos">Contactanos</a></li>
+      </ul>
+    </div>
+    <section id="Inicio">
+        <video autoplay muted loop id="video-bg">
+          <source src="./videofondo.mp4" type="video/mp4" >
+          ...
         </video>
+        <!--
+        <div class="content">
+          <h2>Sección Inicio</h2>
+        </div>-->
+    </section>
+    <section id="Nosotros" style="background-image: url('https://cdn.pixabay.com/photo/2013/02/13/22/43/kitchen-81493_1280.jpg')">
+      <h2>Sección Nosotros</h2>
+    </section>
+    <section id="Promos" style="background-image: url('https://cdn.pixabay.com/photo/2016/03/27/16/54/food-1283108_1280.jpg')">
+      <h2>Sección Promos</h2>
+    </section>
+    <section id="Contactanos" style="background-image: url('https://cdn.pixabay.com/photo/2016/02/26/01/13/telephone-1223310_1280.jpg')">
+        <h2>Sección Contactanos</h2>
+        <form action="" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+      
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+      
+          <input type="submit" value="Enviar">
+        </form>
       </section>
-      <section id="offerts">
-        <a href="#"><img src="#" alt="super oferta" /></a>
-      </section>
-      <section id="ubicacion">
-        <div id="map-ubic">
-          <iframe
-            src="https://www.google.com/maps/place/Burgers+Thrones/@-34.7371554,-58.2707967,17z/data=!3m1!4b1!4m6!3m5!1s0x95a32f7b3d8a15a1:0xefb283e098f59c7f!8m2!3d-34.7371554!4d-58.2682164!16s%2Fg%2F11vbp5h391?entry=ttu"
-            frameborder="0"
-            class="gmaps"
-          ></iframe>
-        </div>
-      </section>
-    </main>
-  </body>
+  </div>
+</body>
 </html>
